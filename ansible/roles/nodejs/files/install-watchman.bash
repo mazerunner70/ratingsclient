@@ -12,6 +12,6 @@ sudo make install
 
 watchman --version
 
-echo 1999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches  && echo 1999999 | sudo tee -a  /proc/sys/fs/inotify/max_queued_events && echo 1999999 | sudo tee  -a /proc/sys/fs/inotify/max_user_instances && watchman  shutdown-server
+echo 2499999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches  && echo 2499999 | sudo tee -a  /proc/sys/fs/inotify/max_queued_events && echo 2499999 | sudo tee  -a /proc/sys/fs/inotify/max_user_instances && watchman  shutdown-server
 
 

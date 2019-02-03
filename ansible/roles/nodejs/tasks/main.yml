@@ -118,7 +118,13 @@
   - 'export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools/'
   - 'export PATH=$PATH:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS'
 
+- name: locate role_path
+  shell: pwd
+  register: out2
+
+- debug: var=out2.stdout
 
 - name: install Watchman
-  shell: "{{ role_path }}/files/install-watchman.bash"
+  shell: "roles/nodejs/files/install-watchman.bash"
+#  shell: "{{ role_path }}/files/install-watchman.bash"
 

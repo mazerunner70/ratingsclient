@@ -92,7 +92,8 @@
 #Install android SDK
 - name: download file
   get_url:
-    url: https://dl.google.com/dl/android/studio/ide-zips/3.2.1.0/android-studio-ide-181.5056338-linux.zip
+#    url: https://dl.google.com/dl/android/studio/ide-zips/3.2.1.0/android-studio-ide-181.5056338-linux.zip
+    url: https://dl.google.com/dl/android/studio/ide-zips/3.3.1.0/android-studio-ide-182.5264788-linux.zip
     dest: /tmp/sdk.zip
 
 - name: create target dir

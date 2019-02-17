@@ -7,6 +7,7 @@ import {
 import { goToAuth } from '../auth';
 import { USER_KEY } from '../config';
 import { ContainerView } from './styled';
+import SummaryPane from '../../components/summary-pane';
 
 export default class Home extends React.Component {
     static get options() {
@@ -44,6 +45,15 @@ export default class Home extends React.Component {
                     }}
                     title='View next screen'
                 />
+                <SummaryPane pressHandler={() => {
+                        Navigation.push(this.props.componentId, {
+                            component: {
+                                name: 'Screen2',
+                            }
+                        });
+                    }}/>
+                <Text>Hello from Home screen</Text>
+
             </ContainerView>
         )
     }

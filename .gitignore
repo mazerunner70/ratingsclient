@@ -18,6 +18,10 @@
 ###########
 ansible_vault_password.txt
 
+# APK secret #
+##############
+my-release-key.keystore
+
 # Vagrant #
 ###########
 .vagrant

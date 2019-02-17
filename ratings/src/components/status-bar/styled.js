@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 function getPortraintQuery() {
     const { width, height } = Device.dimensions.window;
     
-    return MediaQuerySelector.query({orientation: "portraint", minHeight: 459,}, width, height);
+    return MediaQuerySelector.query({orientation: "portrait", minHeight: 459,}, width, height);
 }
 
 const WhiteText = styled(Text) `

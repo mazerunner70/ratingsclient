@@ -3,8 +3,30 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import { Navigation } from "react-native-navigation";
+// import App from "./App";
 
-AppRegistry.registerComponent(appName, () => App);
+// Navigation.registerComponent(`navigation.playground.WelcomeScreen`, () => App);
+
+// Navigation.events().registerAppLaunchedListener(() => {
+//   Navigation.setRoot({
+//     root: {
+//       component: {
+//         name: "navigation.playground.WelcomeScreen"
+//       }
+//     }
+//   });
+// });
+
+import { registerScreens } from './src/screens/registerscreens';
+
+registerScreens();
+Navigation.events() .registerAppLaunchedListener(() => {
+    Navigation.setRoot({
+        root: {
+            component: {
+                name: 'Initialising'
+            }
+        },
+    });
+});

@@ -1,0 +1,11 @@
+# Example config file for gradle to hold secrets for signing
+# Place this file at ~/.gradle/gradle.properties, ensure you rename it!
+# See here for details https://facebook.github.io/react-native/docs/signed-apk-android
+
+APP_RELEASE_STORE_FILE=my-release-key.keystore
+MYAPP_RELEASE_KEY_ALIAS=my-key-alias
+MYAPP_RELEASE_STORE_PASSWORD=*****
+MYAPP_RELEASE_KEY_PASSWORD=*****
+
+
+

@@ -10,7 +10,7 @@ function getPortraintQuery() {
 
 const MainContainer = styled(View) `
     flex: 1;
-    justifyContent: center;
+    justify-content: center;
     alignItems: center;
     paddingTop: 0;
 `;
@@ -18,9 +18,9 @@ const MainContainer = styled(View) `
 const ImageViewStyle = styled(View) `
     width: 190;
     height: 150;
-    borderTopLeftRadius: 15px;
+    border-top-left-radius: 15px;
     borderTopRightRadius: 15px;
-
+    overflow: hidden;
 `;
 
 

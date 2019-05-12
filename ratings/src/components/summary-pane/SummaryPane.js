@@ -14,12 +14,12 @@ class SummaryPane extends ResponsiveComponent {
         return(
             <View style={{ width:250 }}>
                 <TouchableOpacity onPress={this.props.pressHandler}>
-                    <View style={styles.ImageViewStyle}>
+                    <ImageViewStyle>
                         <ImageBackground source={bkg}
                             style={{width:250, height: 150 }} >
                             <Text>    App Store reviews</Text>
                         </ImageBackground>
-                    </View>
+                    </ImageViewStyle>
                 </TouchableOpacity>
                 <View style={styles.ImageViewStyle}>
                     <ImageBackground source={bkg}

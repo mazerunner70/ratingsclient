@@ -3,7 +3,7 @@ import { Navigation } from 'react-native-navigation';
 import {
     View, Text, Button, AsyncStorage
 } from 'react-native';
-
+    
 import { goToAuth } from '../auth';
 import { USER_KEY } from '../config';
 import { ContainerView } from './styled';
